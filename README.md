@@ -39,6 +39,9 @@ Se realizará filtrado de carácter y filtrado de campo según los requerimiento
 personalizarán los mensajes de error y se hará uso de los nuevos atributos, métodos y propiedades
 ofrecidos por HTML5 en cuanto a validación de campos.
 Cuando se pulse el botón de enviar, en caso de superar tales comprobaciones se procederá el envío de
-los mismos a la dirección [link](http://www.empresasa.es/fabrica/gestionFicha.php) mediante el método
-post.
+los mismos a la dirección http://www.empresasa.es/fabrica/gestionFicha.php mediante el método post.
+
 El contenido de las cajas quedará seleccionado de forma automática al coger el foco.
+El font del título es un google Font Cherry Swash y el resto del texto en google Font Della Respira.
+Se desarrollarán funciones para hacer el filtrado de los campos que tengan visos de volver a ser usadas, como por ejemplo isNif, isCC... que se incluirán en un archivo js separado con nombre filter.js y se incorporarán a las clases adecuadas.
+Se deberá utilizar bootstrap para la codificación html y css de la página y hacerla responsive
