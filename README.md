@@ -32,4 +32,13 @@ aparece el nombre del campo para el formulario):
 * Los valores entre paréntesis son los valores que han de enviarse al servidor en función de la localidad seleccionada, es decir si se selecciona La Bañeza se enviará un 2 en el campo provincia y un 1 en el campo localidad.
 * El campo **nombreBanco** tendrá una longitud máxima de 30 caracteres. No es campo obligatorio.
 * El campo **nombreSucursal** tendrá también una longitud máxima de 30 caracteres. No es campo obligatorio.
-* El campo **numeroCuenta** tendrá una longitud máxima de 23 caracteres y se corresponderá con el formato xxxx-xxxx-xx-xxxxxxxxxx siendo las x dígitos entre 0 y 9. No es campo obligatorio pero si se incluye ha de tener ese formato. Deberá comprobarse que es un número de cuenta válido
+* El campo **numeroCuenta** tendrá una longitud máxima de 23 caracteres y se corresponderá con el formato xxxx-xxxx-xx-xxxxxxxxxx siendo las x dígitos entre 0 y 9. No es campo obligatorio pero si se incluye ha de tener ese formato. Deberá comprobarse que es un número de cuenta válido.
+
+
+Se realizará filtrado de carácter y filtrado de campo según los requerimientos anteriores. Se
+personalizarán los mensajes de error y se hará uso de los nuevos atributos, métodos y propiedades
+ofrecidos por HTML5 en cuanto a validación de campos.
+Cuando se pulse el botón de enviar, en caso de superar tales comprobaciones se procederá el envío de
+los mismos a la dirección [link](http://www.empresasa.es/fabrica/gestionFicha.php) mediante el método
+post.
+El contenido de las cajas quedará seleccionado de forma automática al coger el foco.
